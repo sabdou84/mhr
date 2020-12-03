@@ -124,14 +124,14 @@ var KTLogin = function() {
 					username: {
 						validators: {
 							notEmpty: {
-								message: 'Username is required'
+								message: 'مطلوب اسم المستخدم'
 							}
 						}
 					},
 					password: {
 						validators: {
 							notEmpty: {
-								message: 'Password is required'
+								message: 'مطلوب كلمة المرور'
 							}
 						}
 					}
@@ -151,10 +151,10 @@ var KTLogin = function() {
             validation.validate().then(function(status) {
 		        if (status == 'Valid') {
                     swal.fire({
-		                text: "All is cool! Now you submit this form",
+		                text: "البيانات صحيحة، جاري تسجيل الدخول",
 		                icon: "success",
 		                buttonsStyling: false,
-		                confirmButtonText: "Ok, got it!",
+		                confirmButtonText: "حسناً",
                         customClass: {
     						confirmButton: "btn font-weight-bold btn-light-primary"
     					}
@@ -163,10 +163,10 @@ var KTLogin = function() {
 					});
 				} else {
 					swal.fire({
-		                text: "Sorry, looks like there are some errors detected, please try again.",
+		                text: "اسم المستخدم و / أو كلمة المرور غير صحيح",
 		                icon: "error",
 		                buttonsStyling: false,
-		                confirmButtonText: "Ok, got it!",
+		                confirmButtonText: "حسناً",
                         customClass: {
     						confirmButton: "btn font-weight-bold btn-light-primary"
     					}
