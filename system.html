@@ -4,14 +4,15 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>نظام إدارة الموارد البشرية | التأشيرات </title>
+		<title>نظام إدارة الموارد البشرية | صلاحيات النظام</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		 
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
-		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/custom/jstree/jstree.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Vendors Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
@@ -115,7 +116,7 @@
 									</a>
 								</li>
 
-								<li class="menu-item " aria-haspopup="true">
+								<li class="menu-item menu-item-active" aria-haspopup="true">
 									<a href="system.html" class="menu-link">
 										<span class="menu-icon">
 											<i class="fas fa-lock"></i> 
@@ -124,12 +125,21 @@
 									</a>
 								</li>
 
-								<li class="menu-item  menu-item-active" aria-haspopup="true">
+								<li class="menu-item " aria-haspopup="true">
 									<a href="visas.html" class="menu-link">
 										<span class="menu-icon">
 											<i class="fas fa-passport"></i> 
 										</span>
 										<span class="menu-text">التأشيرات</span>
+									</a>
+								</li>
+
+<li class="menu-item " aria-haspopup="true">
+									<a href="hajj.html" class="menu-link">
+										<span class="menu-icon">
+											<i class="fas fa-passport"></i> 
+										</span>
+										<span class="menu-text">عمليات الحج</span>
 									</a>
 								</li>
 								  
@@ -340,170 +350,99 @@
 									<!--begin::Page Heading-->
 									<div class="d-flex align-items-baseline flex-wrap mr-5">
 										<!--begin::Page Title-->
-										<h3 class="text-dark font-weight-bold my-1 mr-5">التأشيرات</h3>
+										<h3 class="text-dark font-weight-bold my-1 mr-5">صلاحيات النظام</h3>
 										<!--end::Page Title-->
 									</div>
 									<!--end::Page Heading-->
 								</div>
 								<!--end::Info-->
-								<!--begin::Toolbar-->
-								<div class="d-flex align-items-center flex-wrap">
-									<!--begin::Daterange-->
-									<a href="#" class="btn btn-fixed-height btn-bg-white btn-text-dark-50 btn-hover-text-primary btn-icon-primary font-weight-bolder font-size-sm px-5 my-1 mr-3" id="kt_dashboard_daterangepicker" data-toggle="tooltip" title="Select dashboard daterange" data-placement="top">
-										<span class="opacity-60 font-weight-bolder mr-2" id="kt_dashboard_daterangepicker_title">Today</span>
-										<span class="font-weight-bolder" id="kt_dashboard_daterangepicker_date">Aug 16</span>
-									</a>
-									<!--end::Daterange-->
-									 
-									 
-								</div>
-								<!--end::Toolbar-->
+								 
 							</div>
 						</div>
 						<!--end::Subheader-->
-						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
-							<!--begin::Container-->
-							<div class="container">								 
-								<!--begin::Card-->
-								<div class="card card-custom">
-									<div class="card-header flex-wrap border-0 pt-6 pb-0">
-										<div class="card-title">
-											<h3 class="card-label">تأشيرات الموظفين</h3>
-										</div>
-										<div class="card-toolbar">
-											<!--begin::Dropdown-->
-											<div class="dropdown dropdown-inline mr-2">
-												<button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="svg-icon svg-icon-md">
-													<!--begin::Svg Icon | path:assets/media/svg/icons/Design/PenAndRuller.svg-->
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24" />
-															<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-															<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-														</g>
-													</svg>
-													<!--end::Svg Icon-->
-												</span>تصدير</button>
-												<!--begin::Dropdown Menu-->
-												<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-													<!--begin::Navigation-->
-													<ul class="navi flex-column navi-hover py-2">
-														<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">حدد خياراً</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-print"></i>
-																</span>
-																<span class="navi-text">طباعه</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-copy"></i>
-																</span>
-																<span class="navi-text">نسخ</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-excel-o"></i>
-																</span>
-																<span class="navi-text">Excel</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-text-o"></i>
-																</span>
-																<span class="navi-text">CSV</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-pdf-o"></i>
-																</span>
-																<span class="navi-text">PDF</span>
-															</a>
-														</li>
-													</ul>
-													<!--end::Navigation-->
-												</div>
-												<!--end::Dropdown Menu-->
-											</div>
-											<!--end::Dropdown-->
-											<!--begin::Button-->
-											<a href="visas-add-new.html" class="btn btn-primary font-weight-bolder">
-											<span class="svg-icon svg-icon-md">
-												 <i class="fas fa-plus"></i>
-											</span>جديد</a>
-											<!--end::Button-->
-										</div>
-									</div>
-									<div class="card-body">
-										<!--begin: Search Form-->
-										<!--begin::Search Form-->
-										<div class="mb-7">
-											<div class="row align-items-center">
-												<div class="col-lg-9 col-xl-8">
-													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="input-icon">
-																<input type="text" class="form-control" placeholder="بحث..." id="kt_datatable_search_query" />
-																<span>
-																	<i class="flaticon2-search-1 text-muted"></i>
-																</span>
-															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="d-flex align-items-center">
-																<label class="mr-3 mb-0 d-none d-md-block">الحالة:</label>
-																<select class="form-control" id="kt_datatable_search_status">
-																	<option value="">الكل</option>
-																	<option value="1">Pending</option>
-																	<option value="2">Delivered</option>
-																	<option value="3">Canceled</option>
-																	<option value="4">Success</option>
-																	<option value="5">Info</option>
-																	<option value="6">Danger</option>
-																</select>
-															</div>
-														</div>
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="d-flex align-items-center">
-																<label class="mr-3 mb-0 d-none d-md-block">النوع:</label>
-																<select class="form-control" id="kt_datatable_search_type">
-																	<option value="">الكل</option>
-																	<option value="1">Online</option>
-																	<option value="2">Retail</option>
-																	<option value="3">Direct</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
-													<a href="#" class="btn btn-light-primary px-6 font-weight-bold">بحث</a>
-												</div>
-											</div>
-										</div>
-										<!--end::Search Form-->
-										<!--end: Search Form-->
-										<!--begin: Datatable-->
-										<div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
-										<!--end: Datatable-->
-									</div>
-								</div>
-								<!--end::Card-->
-							</div>
-							<!--end::Container-->
-						</div>
-						<!--end::Entry-->
+                        <!--begin::Entry-->
+                        <div class="d-flex flex-column-fluid">
+                            <!--begin::Container-->
+                        <div class="container">
+                             
+                            <!--begin::Card-->
+                            <div class="card card-custom">
+                                <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                                    <div class="card-title">
+                                        <h3 class="card-label">صلاحيات المستخدمين</h3>
+                                    </div>
+                                    <div class="card-toolbar">
+                                         
+                                        <!--begin::Button-->
+                                        <a href="#" class="btn btn-primary font-weight-bolder"  data-toggle="modal" data-target="#exampleModalLong">
+                                        <span class="svg-icon svg-icon-md">
+                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Flatten.svg-->
+                                            <i class="fas fa-plus"></i>
+                                            <!--end::Svg Icon-->
+                                        </span>جديد</a>
+                                        <!--end::Button-->
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <!--begin: Search Form-->
+                                    <!--begin::Search Form-->
+                                    <!-- <div class="mb-7">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-9 col-xl-8">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-4 my-2 my-md-0">
+                                                        <div class="input-icon">
+                                                            <input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+                                                            <span>
+                                                                <i class="flaticon2-search-1 text-muted"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 my-2 my-md-0">
+                                                        <div class="d-flex align-items-center">
+                                                            <label class="mr-3 mb-0 d-none d-md-block">Status:</label>
+                                                            <select class="form-control" id="kt_datatable_search_status">
+                                                                <option value="">All</option>
+                                                                <option value="1">Pending</option>
+                                                                <option value="2">Delivered</option>
+                                                                <option value="3">Canceled</option>
+                                                                <option value="4">Success</option>
+                                                                <option value="5">Info</option>
+                                                                <option value="6">Danger</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 my-2 my-md-0">
+                                                        <div class="d-flex align-items-center">
+                                                            <label class="mr-3 mb-0 d-none d-md-block">Type:</label>
+                                                            <select class="form-control" id="kt_datatable_search_type">
+                                                                <option value="">All</option>
+                                                                <option value="1">Online</option>
+                                                                <option value="2">Retail</option>
+                                                                <option value="3">Direct</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
+                                                <a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!--end::Search Form-->
+                                    <!--end: Search Form-->
+                                    <!--begin: Datatable-->
+                                    <div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
+                                    <!--end: Datatable-->
+                                </div>
+                            </div>
+                            <!--end::Card-->
+                        </div>
+                        <!--end::Container-->
+                        </div>
+                        <!--end::Entry-->
+                        
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
@@ -1043,7 +982,181 @@
 				<!--end::Svg Icon-->
 			</span>
 		</div>
-		<!--end::Scrolltop-->
+        <!--end::Scrolltop-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+<div class="modal fade" id="exampleModalLong" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">إضافة نظام أمني</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+
+                <form>
+                        
+                             
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label">الاسم العربي</label>
+                        <div class="col-9">
+                            <input class="form-control" type="text" value="" id="example-text-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label">الاسم الانجليزي</label>
+                        <div class="col-9">
+                            <input class="form-control" type="text" value="" id="example-text-input">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleSelect1">أنظمة أمنية سابقة</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>مدير النظام</option>
+                            <option>موظف</option>
+                            <option>مدخل بيانات</option>
+                            <option>مورد</option>
+                            
+                        </select>
+                    </div>
+
+
+
+
+                    <hr>
+
+
+                    <div id="kt_tree_2" class="tree-demo">
+                        <ul>
+                         <li>
+                          Root node 1
+                          <ul>
+                           <li data-jstree='{ "selected" : true }'>
+                            <a href="javascript:;">
+                            Initially selected </a>
+                           </li>
+                           <li data-jstree='{ "icon" : "flaticon2-analytics text-success " }'>
+                            custom icon URL
+                           </li>
+                           <li data-jstree='{ "opened" : true }'>
+                            initially open
+                            <ul>
+                             <li data-jstree='{ "disabled" : true }'>
+                              Disabled Node
+                             </li>
+                             <li data-jstree='{ "type" : "file" }'>
+                              Another node
+                             </li>
+                            </ul>
+                           </li>
+                           <li data-jstree='{ "icon" : "flaticon2-user text-danger" }'>
+                            Custom icon class (bootstrap)
+                           </li>
+                          </ul>
+                         </li>
+                         <li data-jstree='{ "type" : "file" }'>
+                          <a href="https://keenthemes.com/">
+                          Clickable link node </a>
+                         </li>
+                        </ul>
+                       </div>
+
+
+
+
+
+
+
+                     
+                    
+                
+                
+            </form>
+                
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">إلغاء</button>
+                <button type="button" class="btn btn-primary font-weight-bold">حفظ</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+
+    $('#kt_tree_2').jstree({
+        "core": {
+            "themes": {
+                "responsive": false
+            }
+        },
+        "types": {
+            "default": {
+                "icon": "fa fa-folder text-warning"
+            },
+            "file": {
+                "icon": "fa fa-file  text-warning"
+            }
+        },
+        "plugins": ["types"]
+    });
+    
+    // handle link clicks in tree nodes(support target="_blank" as well)
+    $('#kt_tree_2').on('select_node.jstree', function(e, data) {
+        var link = $('#' + data.selected).find('a');
+        if (link.attr("href") != "#" && link.attr("href") != "javascript:;" && link.attr("href") != "") {
+            if (link.attr("target") == "_blank") {
+                link.attr("href").target = "_blank";
+            }
+            document.location.href = link.attr("href");
+            return false;
+        }
+    });
+    </script> -->
+
+
+
+
+
+
+
 		 
 		 
 		
@@ -1069,10 +1182,20 @@
 
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
+        <!-- <script src="assets/plugins/custom/jstree/jstree.bundle.js"></script> -->
+        
+
+        
+        
+        <!-- <script src="assets/js/pages/features/miscellaneous/treeview.js"></script> -->
+
+        <script src="assets/js/pages/features/ktdatatable/base/data-local-2.js"></script>
 	
-		<script src="assets/js/pages/features/ktdatatable/base/data-local.js"></script>
-	
-		<!--end::Page Scripts-->
+        <!--end::Page Scripts-->
+        
+
+
+
 	</body>
 	<!--end::Body-->
 </html>

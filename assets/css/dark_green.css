@@ -309,6 +309,39 @@ a.text-primary:hover {
 }
 
 
+.datatable.datatable-default>.datatable-pager>.datatable-pager-nav>li>.datatable-pager-link.datatable-pager-link-active {
+     
+    background-color: #388e3c;
+     
+}
+
+.datatable.datatable-default.datatable-head-custom>.datatable-table>.datatable-foot .datatable-row>.datatable-cell.datatable-cell-sorted>span, .datatable.datatable-default.datatable-head-custom>.datatable-table>.datatable-head .datatable-row>.datatable-cell.datatable-cell-sorted>span {
+    color: #388e3c;
+}
+
+.datatable.datatable-default>.datatable-table>.datatable-head .datatable-row>.datatable-cell>span>i {
+    
+    color: #388e3c;
+}
+
+.checkbox>input:checked~span {
+    background-color: #388e3c;
+}
+
+
+.btn.btn-light-primary.dropdown-toggle:after {
+    color: #ffffff;
+}
+
+.datatable.datatable-default>.datatable-table>.datatable-body .datatable-toggle-detail i {
+     
+    color: #388e3c;
+}
+ 
+
 /*end of index page colors*/
 
 /*End of Dark green theme*/
+
+
+

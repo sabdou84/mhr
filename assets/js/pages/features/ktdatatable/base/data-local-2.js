@@ -102,11 +102,10 @@ var KTDatatableDataLocalDemo = function() {
 
     // demo initializer
     var demo = function() {
-        var dataJSONArray = JSON.parse('[{"RecordID":1,"OrderID":"01/11/2020","Country":"123","ShipDate":"8/27/2017","PaymentDate":"2016-09-15 22:18:06","TimeZone":"Asia/Chongqing","TotalPayment":"$336309.10","Status":6,"Type":2,"Actions":null},\n' +
-            '{"RecordID":2,"OrderID":"07/11/2020","Country":"Philippines","ShipDate":"9/3/2017","PaymentDate":"2016-09-05 16:27:07","TimeZone":"Asia/Manila","TotalPayment":"$786612.37","Status":1,"Type":2,"Actions":null},\n' +
-            '{"RecordID":3,"OrderID":"02/11/2020","Country":"Paraguay","ShipDate":"4/23/2016","PaymentDate":"2016-01-01 08:03:07","TimeZone":"America/Asuncion","TotalPayment":"$216102.85","Status":5,"Type":1,"Actions":null},\n' +            
-            '{"RecordID":4,"OrderID":"08/11/2020","Country":"Brazil","ShipDate":"10/28/2017","PaymentDate":"2017-02-20 12:31:25","TimeZone":"America/Sao_Paulo","TotalPayment":"$968744.59","Status":5,"Type":1,"Actions":null},\n' +                        
-            '{"RecordID":5,"OrderID":"24/11/2020","Country":"Honduras","ShipDate":"1/14/2016","PaymentDate":"2016-12-27 22:25:10","TimeZone":"America/Tegucigalpa","TotalPayment":"$386091.31","Status":6,"Type":3,"Actions":null}]');
+        var dataJSONArray = JSON.parse('[{"RecordID":1,"NameAR":"مدير النظام","NameEN":"Admin","Actions":null},\n' +
+            '{"RecordID":2,"NameAR":"موظف","NameEN":"user","Actions":null},\n' +
+            '{"RecordID":2,"NameAR":"مدخل بيانات","NameEN":"Data Entry","Actions":null},\n' +
+            '{"RecordID":4,"NameAR":"التموين","NameEN":"Supply","Actions":null}]');
 
         var datatable = $('#kt_datatable').KTDatatable({
             // datasource definition
@@ -145,83 +144,13 @@ var KTDatatableDataLocalDemo = function() {
                 },
                 textAlign: 'center',
             }, {
-                field: 'OrderID',
-                title: 'تاريخ الإنشاء',
+                field: 'NameAR',
+                title: 'الإسم العربي',
             }, {
-                field: 'Country',
-                title: 'رقم التأشيرة',                
-            }, {
-                field: 'ShipDate',
-                title: 'تاريخ الإصدار',
-                type: 'date',
-                format: 'MM/DD/YYYY',
-            }, {
-                field: 'CompanyName',
-                title: 'تاريخ الإنتهاء',
-            }, {
-                field: 'Status',
-                title: 'العدد الكلي',
-                // callback function support for column rendering
-                template: function(row) {
-                    var status = {
-                        1: {
-                            'title': 'Pending',
-                            'class': ' label-light-success'
-                        },
-                        2: {
-                            'title': 'Delivered',
-                            'class': ' label-light-danger'
-                        },
-                        3: {
-                            'title': 'Canceled',
-                            'class': ' label-light-primary'
-                        },
-                        4: {
-                            'title': 'Success',
-                            'class': ' label-light-success'
-                        },
-                        5: {
-                            'title': 'Info',
-                            'class': ' label-light-info'
-                        },
-                        6: {
-                            'title': 'Danger',
-                            'class': ' label-light-danger'
-                        },
-                        7: {
-                            'title': 'Warning',
-                            'class': ' label-light-warning'
-                        },
-                    };
-                    return '<span class="label font-weight-bold label-lg ' + status[row.Status].class + ' label-inline">' + status[row.Status].title + '</span>';
-                },
-            }, {
-                field: 'Type',
-                title: 'المتبقي',
-                autoHide: false,
-                // callback function support for column rendering
-                template: function(row) {
-                    var status = {
-                        1: {
-                            'title': 'Online',
-                            'state': 'danger'
-                        },
-                        2: {
-                            'title': 'Retail',
-                            'state': 'primary'
-                        },
-                        3: {
-                            'title': 'Direct',
-                            'state': 'success'
-                        },
-                    };
-                    return '<span class="label label-' + status[row.Type].state + ' label-dot mr-2"></span><span class="font-weight-bold text-' + status[row.Type].state + '">' +
-                        status[row.Type].title + '</span>';
-                },
-            },{
-                field: 'User',
-                title: 'المستخدم',
-            },{
+                field: 'NameEN',
+                title: 'الإسم الإنجليزي',
+                 
+            },  {
                 field: 'Actions',
                 title: 'العمليات',
                 sortable: false,
@@ -279,7 +208,7 @@ var KTDatatableDataLocalDemo = function() {
 	                                </ul>\
 							  	</div>\
 							</div>\
-							<a href="javascript:;" class="btn btn-sm btn-clean btn-icon mr-2" title="تعديل">\
+							<a href="javascript:;" class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">\
 	                            <span class="svg-icon svg-icon-md">\
 	                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">\
 	                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
@@ -290,7 +219,7 @@ var KTDatatableDataLocalDemo = function() {
 	                                </svg>\
 	                            </span>\
 							</a>\
-							<a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="حذف">\
+							<a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="Delete">\
 	                            <span class="svg-icon svg-icon-md">\
 	                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">\
 	                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
@@ -299,16 +228,6 @@ var KTDatatableDataLocalDemo = function() {
 	                                        <path d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z" fill="#000000" opacity="0.3"/>\
 	                                    </g>\
 	                                </svg>\
-	                            </span>\
-                            </a>\
-                            <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="عرض تفاصيل">\
-	                            <span class="svg-icon svg-icon-md">\
-	                                <i class="fas fa-info-circle"></i>\
-	                            </span>\
-                            </a>\
-                            <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" title="أرشيف">\
-	                            <span class="svg-icon svg-icon-md">\
-	                                <i class="fas fa-archive"></i>\
 	                            </span>\
 							</a>\
 						';

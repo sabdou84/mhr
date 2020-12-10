@@ -37,3 +37,32 @@ h6 {
         min-height: 65px;
     }
 }
+
+ 
+
+
+.datatable.datatable-default.datatable-head-custom>.datatable-table>.datatable-foot .datatable-row>.datatable-cell>span, .datatable.datatable-default.datatable-head-custom>.datatable-table>.datatable-head .datatable-row>.datatable-cell>span {
+    
+    letter-spacing: normal;
+    font-size: 1.2em;
+}
+
+.datatable.datatable-default>.datatable-table>.datatable-body .datatable-row>.datatable-cell>span, .datatable.datatable-default>.datatable-table>.datatable-foot .datatable-row>.datatable-cell>span, .datatable.datatable-default>.datatable-table>.datatable-head .datatable-row>.datatable-cell>span {
+    font-size: 1.1em;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.modal-body .form-control,
+.card-custom .form-control{
+    font-size: 1.2em;
+    line-height: 3;
+}
+
+#kt_header_mobile_toggle {
+    display: none!important;
+}
