@@ -13,6 +13,13 @@
     /*Color 5*/
 }
 
+
+a {
+    color: #388e3c;    
+}
+a:hover {
+    color: #0d480f;
+}
 .bg-primary {
     background-color: #388e3c !important;
 }
@@ -339,7 +346,18 @@ a.text-primary:hover {
 }
  
 
+.navi .navi-item .navi-link:hover .navi-icon i, 
+.navi .navi-item .navi-link:hover .navi-text {
+    color: #388e3c;
+}
+
 /*end of index page colors*/
+
+
+
+.hajj-card {
+    border-bottom: 4px solid #0d480f !important;
+}
 
 /*End of Dark green theme*/
 
