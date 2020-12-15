@@ -4,15 +4,14 @@
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>نظام إدارة الموارد البشرية | صلاحيات النظام</title>
+		<title>نظام إدارة الموارد البشرية | مهام الحج </title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
-		 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendors Styles(used by this page)-->
-        <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
-        <link href="assets/plugins/custom/jstree/jstree.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Vendors Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
@@ -116,7 +115,7 @@
 									</a>
 								</li>
 
-								<li class="menu-item menu-item-active" aria-haspopup="true">
+								<li class="menu-item " aria-haspopup="true">
 									<a href="system.html" class="menu-link">
 										<span class="menu-icon">
 											<i class="fas fa-lock"></i> 
@@ -125,21 +124,12 @@
 									</a>
 								</li>
 
-								<li class="menu-item " aria-haspopup="true">
+								<li class="menu-item  menu-item-active" aria-haspopup="true">
 									<a href="visas.html" class="menu-link">
 										<span class="menu-icon">
 											<i class="fas fa-passport"></i> 
 										</span>
 										<span class="menu-text">التأشيرات</span>
-									</a>
-								</li>
-
-<li class="menu-item " aria-haspopup="true">
-									<a href="hajj.html" class="menu-link">
-										<span class="menu-icon">
-											<i class="fas fa-passport"></i> 
-										</span>
-										<span class="menu-text">عمليات الحج</span>
 									</a>
 								</li>
 								  
@@ -350,99 +340,201 @@
 									<!--begin::Page Heading-->
 									<div class="d-flex align-items-baseline flex-wrap mr-5">
 										<!--begin::Page Title-->
-										<h3 class="text-dark font-weight-bold my-1 mr-5">صلاحيات النظام</h3>
+										<h3 class="text-dark font-weight-bold my-1 mr-5">مهام الحج</h3>
 										<!--end::Page Title-->
 									</div>
 									<!--end::Page Heading-->
 								</div>
 								<!--end::Info-->
-								 
+								<!--begin::Toolbar-->
+								<div class="d-flex align-items-center flex-wrap">
+									<!--begin::Daterange-->
+									<a href="#" class="btn btn-fixed-height btn-bg-white btn-text-dark-50 btn-hover-text-primary btn-icon-primary font-weight-bolder font-size-sm px-5 my-1 mr-3" id="kt_dashboard_daterangepicker" data-toggle="tooltip" title="Select dashboard daterange" data-placement="top">
+										<span class="opacity-60 font-weight-bolder mr-2" id="kt_dashboard_daterangepicker_title">Today</span>
+										<span class="font-weight-bolder" id="kt_dashboard_daterangepicker_date">Aug 16</span>
+									</a>
+									<!--end::Daterange-->
+									 
+									 
+								</div>
+								<!--end::Toolbar-->
 							</div>
 						</div>
 						<!--end::Subheader-->
-                        <!--begin::Entry-->
-                        <div class="d-flex flex-column-fluid">
-                            <!--begin::Container-->
-                        <div class="container">
-                             
-                            <!--begin::Card-->
-                            <div class="card card-custom">
-                                <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                                    <div class="card-title">
-                                        <h3 class="card-label">صلاحيات المستخدمين</h3>
-                                    </div>
-                                    <div class="card-toolbar">
-                                         
-                                        <!--begin::Button-->
-                                        <a href="#" class="btn btn-primary font-weight-bolder"  data-toggle="modal" data-target="#exampleModalLong">
-                                        <span class="svg-icon svg-icon-md">
-                                            <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Flatten.svg-->
-                                            <i class="fas fa-plus"></i>
-                                            <!--end::Svg Icon-->
-                                        </span>جديد</a>
-                                        <!--end::Button-->
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <!--begin: Search Form-->
-                                    <!--begin::Search Form-->
-                                    <!-- <div class="mb-7">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-9 col-xl-8">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-4 my-2 my-md-0">
-                                                        <div class="input-icon">
-                                                            <input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
-                                                            <span>
-                                                                <i class="flaticon2-search-1 text-muted"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 my-2 my-md-0">
-                                                        <div class="d-flex align-items-center">
-                                                            <label class="mr-3 mb-0 d-none d-md-block">Status:</label>
-                                                            <select class="form-control" id="kt_datatable_search_status">
-                                                                <option value="">All</option>
-                                                                <option value="1">Pending</option>
-                                                                <option value="2">Delivered</option>
-                                                                <option value="3">Canceled</option>
-                                                                <option value="4">Success</option>
-                                                                <option value="5">Info</option>
-                                                                <option value="6">Danger</option>
+						<!--begin::Entry-->
+						<div class="d-flex flex-column-fluid">
+							<!--begin::Container-->
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b example example-compact">
+											<div class="card-header">
+												<h3 class="card-title">إضافة موظف</h3>												
+											</div>
+											<!--begin::Form-->
+											<form class="form">
+												<div class="card-body">
+													<div class="form-group row">
+                                                        <div class="col-lg-4">
+                                                            <label for="exampleSelect1">الموقع</label>
+                                                            <select class="form-control" id="exampleSelect1">
+																<option>إختر موقع</option>
+                                                                <option value="0">مزدلفة</option>
+                                                                <option value="1">منى - موقع أ</option>
+                                                                <option value="2">سولي محمد عزت</option>
+                                                                <option value="3">العوالي</option>
+                                                                <option value="4">العابدية</option>
+                                                                <option value="5">منى - الضيافات</option>
+                                                                <option value="6">مكة المكرمة</option>
+                                                                <option value="7">منى - موقع جـ</option>
+                                                                <option value="8">عرفة</option>
                                                             </select>
-                                                        </div>
+                                                           </div>
+														<div class="col-lg-4">
+															<label>إسم الموظف</label>
+															<div class="input-icon input-icon-right">
+																<input type="text" class="form-control" placeholder="أدخل إسم الموظف"/>
+																<span><i class="flaticon2-search-1 icon-md"></i></span>
+															</div>
+														</div>
+														<div class="col-lg-4">
+															<label>رقم الموظف</label>
+															<div class="input-icon input-icon-right">
+																<input type="text" class="form-control" placeholder="أدخل رقم الموظف"/>
+																<span><i class="flaticon2-search-1 icon-md"></i></span>
+															</div>														 
+														</div>
                                                     </div>
-                                                    <div class="col-md-4 my-2 my-md-0">
-                                                        <div class="d-flex align-items-center">
-                                                            <label class="mr-3 mb-0 d-none d-md-block">Type:</label>
-                                                            <select class="form-control" id="kt_datatable_search_type">
-                                                                <option value="">All</option>
-                                                                <option value="1">Online</option>
-                                                                <option value="2">Retail</option>
-                                                                <option value="3">Direct</option>
+
+                                                    <div class="form-group row">
+														<div class="col-lg-4">
+                                                            <label for="exampleSelect2">الفئة الوظيفية</label>
+                                                            <select class="form-control" id="exampleSelect2">
+																<option>إختر فئه</option>
+																<option value="0">كهربائي</option>
+                                                                <option value="1">سباك</option>
+                                                                <option value="2">حلاق</option>
+                                                                <option value="3">نجار</option>
+                                                                <option value="4">عامل</option>                                                                
                                                             </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
-                                                <a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <!--end::Search Form-->
-                                    <!--end: Search Form-->
-                                    <!--begin: Datatable-->
-                                    <div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
-                                    <!--end: Datatable-->
-                                </div>
-                            </div>
-                            <!--end::Card-->
-                        </div>
-                        <!--end::Container-->
-                        </div>
-                        <!--end::Entry-->
-                        
+                                                         </div>
+                                                        <div class="col-lg-4">
+															<label>عدد المشاركات</label>
+															<input type="text" class="form-control" disabled placeholder="5" />															 
+														</div>
+                                                        <div class="col-lg-4">
+                                                            <label for="example-date-input-02">تاريخ آخر مشاركة</label>                                                             
+                                                             <input class="form-control" type="date" value="2011-08-19" id="example-date-input-02"/ disabled>                                                             													
+														</div>
+                                                       
+                                                       </div>
+                                                    
+                                                     
+													 
+													 
+													<!-- begin: Example Code-->
+													<div class="example-code mt-10">
+														<ul class="example-nav nav nav-tabs nav-bold nav-tabs-line nav-tabs-line-2x">
+															<li class="nav-item">
+																<a class="nav-link active" data-toggle="tab" href="#example_code_html">HTML</a>
+															</li>
+														</ul>
+														<div class="tab-content">
+															<div class="tab-pane active" id="example_code_html" role="tabpanel">
+																<div class="example-highlight">
+																	<pre style="height:400px">
+<code class="language-html">
+        &lt;form class="form"&gt;
+         &lt;div class="card-body"&gt;
+          &lt;div class="form-group row"&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;label&gt;Full Name:&lt;/label&gt;
+            &lt;input type="email" class="form-control" placeholder="Enter full name"/&gt;
+            &lt;span class="form-text text-muted"&gt;Please enter your full name&lt;/span&gt;
+           &lt;/div&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;label&gt;Contact Number:&lt;/label&gt;
+            &lt;input type="email" class="form-control" placeholder="Enter contact number"/&gt;
+            &lt;span class="form-text text-muted"&gt;Please enter your contact number&lt;/span&gt;
+           &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group row"&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;label&gt;Address:&lt;/label&gt;
+            &lt;div class="input-group"&gt;
+             &lt;input type="text" class="form-control" placeholder="Enter your address"/&gt;
+             &lt;div class="input-group-append"&gt;&lt;span class="input-group-text"&gt;&lt;i class="la la-map-marker"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class="form-text text-muted"&gt;Please enter your address&lt;/span&gt;
+           &lt;/div&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;label&gt;Postcode:&lt;/label&gt;
+            &lt;div class="input-group"&gt;
+             &lt;input type="text" class="form-control" placeholder="Enter your postcode"/&gt;
+             &lt;div class="input-group-append"&gt;&lt;span class="input-group-text"&gt;&lt;i class="la la-bookmark-o"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class="form-text text-muted"&gt;Please enter your postcode&lt;/span&gt;
+           &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group row"&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;label&gt;User Group:&lt;/label&gt;
+            &lt;div class="radio-inline"&gt;
+             &lt;label class="radio radio-solid"&gt;
+              &lt;input type="radio" name="example_2" checked="checked" value="2"/&gt;
+              &lt;span&gt;&lt;/span&gt;
+              Sales Person
+             &lt;/label&gt;
+             &lt;label class="radio radio-solid"&gt;
+              &lt;input type="radio" name="example_2" value="2"/&gt;
+              &lt;span&gt;&lt;/span&gt;
+              Customer
+             &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;span class="form-text text-muted"&gt;Please select user group&lt;/span&gt;
+           &lt;/div&gt;
+          &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="card-footer"&gt;
+          &lt;div class="row"&gt;
+           &lt;div class="col-lg-6"&gt;
+            &lt;button type="reset" class="btn btn-primary mr-2"&gt;Save&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-secondary"&gt;Cancel&lt;/button&gt;
+           &lt;/div&gt;
+           &lt;div class="col-lg-6 text-lg-right"&gt;
+            &lt;button type="reset" class="btn btn-danger"&gt;Delete&lt;/button&gt;
+           &lt;/div&gt;
+          &lt;/div&gt;
+         &lt;/div&gt;
+        &lt;/form&gt;
+        </code>
+</pre>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- end: Example Code-->
+												</div>
+												<div class="card-footer">
+													<div class="row">
+														<div class="col-lg-6">
+															<button type="reset" class="btn btn-primary mr-2">حفظ</button>
+															<button type="reset" class="btn btn-secondary">إلغاء</button>
+														</div>
+														 
+													</div>
+												</div>
+											</form>
+											<!--end::Form-->
+										</div>
+										<!--end::Card-->										 
+									</div>
+								</div>
+							</div>
+							<!--end::Container-->
+						</div>
+						<!--end::Entry-->
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
@@ -605,7 +697,7 @@
 					<!--begin::Item-->
 					<span class="navi-item mt-2">
 						<span class="navi-link">
-							<a href="login.html" class="btn btn-sm btn-light-primary font-weight-bolder py-3 px-6">تسجيل الخروج</a>
+							<a href="#" class="btn btn-sm btn-light-primary font-weight-bolder py-3 px-6">تسجيل الخروج</a>
 						</span>
 					</span>
 					<!--end:Item-->
@@ -643,7 +735,7 @@
 					<div class="tab-pane fade show pt-3 pr-5 mr-n5 active" id="kt_quick_panel_logs" role="tabpanel">
 						<!--begin::Section-->
 						<div class="mb-15">
-							<h5 class="font-weight-bold mb-5">رسائل النظام</h5>
+							<h5 class="font-weight-bold mb-5">System Messages</h5>
 							<!--begin::Timeline-->
 							<div class="timeline timeline-5">
 								<div class="timeline-items">
@@ -982,84 +1074,11 @@
 				<!--end::Svg Icon-->
 			</span>
 		</div>
-        <!--end::Scrolltop-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-<div class="modal fade" id="exampleModalLong" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">إضافة نظام أمني</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i aria-hidden="true" class="ki ki-close"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                
-
-                <form>
-                        
-                             
-                    <div class="form-group row">
-                        <label class="col-3 col-form-label">الاسم العربي</label>
-                        <div class="col-9">
-                            <input class="form-control" type="text" value="" id="example-text-input">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label class="col-3 col-form-label">الاسم الانجليزي</label>
-                        <div class="col-9">
-                            <input class="form-control" type="text" value="" id="example-text-input">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="exampleSelect1">أنظمة أمنية سابقة</label>
-                        <select class="form-control" id="exampleSelect1">
-                            <option>مدير النظام</option>
-                            <option>موظف</option>
-                            <option>مدخل بيانات</option>
-                            <option>مورد</option>
-                            
-                        </select>
-                    </div>
-
-
- 
-                
-            </form>
-                
-
-            </div>
-            <div class="modal-footer">
-				<button type="button" class="btn btn-primary font-weight-bold">حفظ</button>
-                <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal">إلغاء</button>
-                
-            </div>
-        </div>
-    </div>
-</div>
-        
-
- 
+		<!--end::Scrolltop-->
+		 
+		 
+		
+		 
 		
 		<!--begin::Global Config(global config for global JS scripts)-->
 		
@@ -1081,20 +1100,10 @@
 
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
-        <!-- <script src="assets/plugins/custom/jstree/jstree.bundle.js"></script> -->
-        
-
-        
-        
-        <!-- <script src="assets/js/pages/features/miscellaneous/treeview.js"></script> -->
-
-        <script src="assets/js/pages/features/ktdatatable/base/data-local-2.js"></script>
 	
-        <!--end::Page Scripts-->
-        
-
-
-
+		<script src="assets/js/pages/features/ktdatatable/base/data-local.js"></script>
+	
+		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->
 </html>

@@ -359,6 +359,10 @@ a.text-primary:hover {
     border-bottom: 4px solid #0d480f !important;
 }
 
+.datatable.datatable-default.datatable-subtable>.datatable-table>.datatable-body .datatable-toggle-subtable>i, .datatable.datatable-default.datatable-subtable>.datatable-table>.datatable-foot .datatable-toggle-subtable>i, .datatable.datatable-default.datatable-subtable>.datatable-table>.datatable-head .datatable-toggle-subtable>i {     
+    color: #388e3c;
+}
+
 /*End of Dark green theme*/
 
 
